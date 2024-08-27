@@ -32,7 +32,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="../views/index.html"><img src="../public/img/logo.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="../views/index.php"><img src="../public/img/logo.png" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -42,36 +42,36 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../views/index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../views/index.php">Home</a></li>
 							<li class="nav-item submenu dropdown active">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Shop</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item active"><a class="nav-link" href="../views/category.html">Shop Category</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-../views/product.html">Product Details</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/checkout.html">Product Checkout</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/cart.html">Shopping Cart</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/confirmation.html">Confirmation</a></li>
+									<li class="nav-item active"><a class="nav-link" href="../views/category.php">Shop Category</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-../views/product.php">Product Details</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/checkout.php">Product Checkout</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/cart.php">Shopping Cart</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/confirmation.php">Confirmation</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../views/blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/single-blog.html">Blog Details</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/blog.php">Blog</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/single-blog.php">Blog Details</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../views/login.html">Login</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/tracking.html">Tracking</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/elements.html">Elements</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/login.php">Login</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/tracking.php">Tracking</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/elements.php">Elements</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="../views/contact.html">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="../views/contact.php">Contact</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
@@ -102,9 +102,9 @@
 				<div class="col-first">
 					<h1>Shop Category page</h1>
 					<nav class="d-flex align-items-center">
-						<a href="../views/index.html">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="../views/index.php">Home<span class="lnr lnr-arrow-right"></span></a>
 						<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-						<a href="../views/category.html">Fashon Category</a>
+						<a href="../views/category.php">Fashon Category</a>
 					</nav>
 				</div>
 			</div>

@@ -9,7 +9,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Be With Us</title>
+	<title>Karma Shop</title>
 
 	<!--
 		CSS
@@ -32,7 +32,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="../views/index.html"><img src="../public/img/logo.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="../views/index.php"><img src="../public/img/logo.png" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -42,36 +42,36 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../views/index.html">Home</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item"><a class="nav-link" href="../views/index.php">Home</a></li>
+							<li class="nav-item submenu dropdown active">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Shop</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../views/category.html">Shop Category</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/single-product.html">Product Details</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/checkout.html">Product Checkout</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/cart.html">Shopping Cart</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/confirmation.html">Confirmation</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/category.php">Shop Category</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-../views/product.php">Product Details</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/checkout.php">Product Checkout</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/cart.php">Shopping Cart</a></li>
+									<li class="nav-item active"><a class="nav-link" href="../views/confirmation.php">Confirmation</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../views/blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/single-blog.html">Blog Details</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/blog.php">Blog</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/single-blog.php">Blog Details</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown active">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item active"><a class="nav-link" href="../views/login.html">Login</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/tracking.html">Tracking</a></li>
-									<li class="nav-item"><a class="nav-link" href="../views/elements.html">Elements</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/login.php">Login</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/tracking.php">Tracking</a></li>
+									<li class="nav-item"><a class="nav-link" href="../views/elements.php">Elements</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="../views/contact.html">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="../views/contact.php">Contact</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
@@ -100,10 +100,10 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Login/Register</h1>
+					<h1>Confirmation</h1>
 					<nav class="d-flex align-items-center">
-						<a href="../views/index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="../views/category.html">Login/Register</a>
+						<a href="../views/index.php">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="../views/category.php">Confirmation</a>
 					</nav>
 				</div>
 			</div>
@@ -111,47 +111,130 @@
 	</section>
 	<!-- End Banner Area -->
 
-	<!--================Login Box Area =================-->
-	<section class="login_box_area section_gap">
+	<!--================Order Details Area =================-->
+	<section class="order_details section_gap">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="login_box_img">
-						<img class="img-fluid" src="../public/img/login.jpg" alt="">
-						<div class="hover">
-							<h4>New to our website?</h4>
-							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-							<a class="primary-btn" href="../views/registration.html">Create an Account</a>
-						</div>
+			<h3 class="title_confirmation">Thank you. Your order has been received.</h3>
+			<div class="row order_d_inner">
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Order Info</h4>
+						<ul class="list">
+							<li><a href="#"><span>Order number</span> : 60235</a></li>
+							<li><a href="#"><span>Date</span> : Los Angeles</a></li>
+							<li><a href="#"><span>Total</span> : USD 2210</a></li>
+							<li><a href="#"><span>Payment method</span> : Check payments</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="login_form_inner">
-						<h3>Log in to enter</h3>
-						<form class="row login_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-							</div>
-							<div class="col-md-12 form-group">
-								<div class="creat_account">
-									<input type="checkbox" id="f-option2" name="selector">
-									<label for="f-option2">Keep me logged in</label>
-								</div>
-							</div>
-							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" class="primary-btn">Log In</button>
-								<a href="#">Forgot Password?</a>
-							</div>
-						</form>
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Billing Address</h4>
+						<ul class="list">
+							<li><a href="#"><span>Street</span> : 56/8</a></li>
+							<li><a href="#"><span>City</span> : Los Angeles</a></li>
+							<li><a href="#"><span>Country</span> : United States</a></li>
+							<li><a href="#"><span>Postcode </span> : 36952</a></li>
+						</ul>
 					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Shipping Address</h4>
+						<ul class="list">
+							<li><a href="#"><span>Street</span> : 56/8</a></li>
+							<li><a href="#"><span>City</span> : Los Angeles</a></li>
+							<li><a href="#"><span>Country</span> : United States</a></li>
+							<li><a href="#"><span>Postcode </span> : 36952</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="order_details_table">
+				<h2>Order Details</h2>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">Product</th>
+								<th scope="col">Quantity</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<p>Pixelstore fresh Blackberry</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>$720.00</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Pixelstore fresh Blackberry</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>$720.00</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Pixelstore fresh Blackberry</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>$720.00</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>Subtotal</h4>
+								</td>
+								<td>
+									<h5></h5>
+								</td>
+								<td>
+									<p>$2160.00</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>Shipping</h4>
+								</td>
+								<td>
+									<h5></h5>
+								</td>
+								<td>
+									<p>Flat rate: $50.00</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>Total</h4>
+								</td>
+								<td>
+									<h5></h5>
+								</td>
+								<td>
+									<p>$2210.00</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--================End Login Box Area =================-->
+	<!--================End Order Details Area =================-->
 
 	<!-- start footer Area -->
 	<footer class="footer-area section_gap">
@@ -232,6 +315,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</footer>
 	<!-- End footer Area -->
+
+
 
 
 	<script src="../public/js/vendor/jquery-2.2.4.min.js"></script>
