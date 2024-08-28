@@ -162,6 +162,28 @@
 												</p>	
 											<?php
 										}
+										if(isset($_SESSION['minEmailLengthMsg']))
+										{
+											?>
+												<p style="color:#ffba0f; display:inline">
+													<?php
+														echo($_SESSION['minEmailLengthMsg']);
+														unset($_SESSION['minEmailLengthMsg']);
+													?>
+												</p>	
+											<?php
+										}
+										if(isset($_SESSION['maxEmailLengthMsg']))
+										{
+											?>
+												<p style="color:#ffba0f; display:inline">
+													<?php
+														echo($_SESSION['maxEmailLengthMsg']);
+														unset($_SESSION['maxEmailLengthMsg']);
+													?>
+												</p>	
+											<?php
+										}
 									?>
 							</div>
 							<div class="col-md-12 form-group">
@@ -178,6 +200,28 @@
 												</p>	
 											<?php
 										}
+										if(isset($_SESSION['minPasswordLengthMsg']))
+										{
+											?>
+												<p style="color:#ffba0f; display:inline">
+													<?php
+														echo($_SESSION['minPasswordLengthMsg']);
+														unset($_SESSION['minPasswordLengthMsg']);
+													?>
+												</p>	
+											<?php
+										}
+										if(isset($_SESSION['maxPasswordLengthMsg']))
+										{
+											?>
+												<p style="color:#ffba0f; display:inline">
+													<?php
+														echo($_SESSION['maxPasswordLengthMsg']);
+														unset($_SESSION['maxPasswordLengthMsg']);
+													?>
+												</p>	
+											<?php
+										}
 									?>
 							</div>
 							<!-- <div class="col-md-12 form-group">
@@ -190,7 +234,19 @@
 								<button type="submit" value="submit" class="primary-btn">Sign Up</button>
 								<!-- <a href="#">Forgot Password?</a> -->
 							</div>
-
+							<?php
+									if(isset($_SESSION['existsMsg']))
+									{
+										?>
+											<p style="color:#ffba0f; text-align:center">
+												<?php
+													echo($_SESSION['existsMsg']);
+													unset($_SESSION['existsMsg']);
+												?>
+											</p>	
+										<?php
+									}
+								?>
 						</form>
 					</div>
 				</div>

@@ -33,6 +33,21 @@
             
             return $stmt;
         }
+        function checkUserExists($email)
+        {
+            $query="SELECT * FROM users where email=:email";
+
+            $stmt=$this->conn->prepare($query);
+            $stmt->bindParam(':email',$email);
+            
+            $stmt->execute();
+            $std=$stmt->fetch(PDO::FETCH_ASSOC);
+
+            if($std)
+                return true;
+            
+            return false;
+        }
     }
 
 ?>
